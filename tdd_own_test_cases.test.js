@@ -32,4 +32,3 @@ describe("findDuplicates", () => {
     expect(findDuplicates([1, 2, 2, 3, 4, 4])).toEqual([2, 4]);
   });
 });
-git add .
