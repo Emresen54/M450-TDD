@@ -10,8 +10,21 @@ function isAllCaps(string) {
     return array1.concat(array2).sort((a, b) => a - b);
   }
   
-  function findDuplicates(array) {
-    return array.filter((item, index) => array.indexOf(item) !== index && array.indexOf(item) === index);
+  function findDuplicates(arr) {
+    const duplicates = [];
+    const seen = new Set();
+  
+    for (const num of arr) {
+      if (seen.has(num)) {
+        if (!duplicates.includes(num)) {
+          duplicates.push(num);
+        }
+      } else {
+        seen.add(num);
+      }
+    }
+  
+    return duplicates;
   }
   
   module.exports = {
