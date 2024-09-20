@@ -1,0 +1,13 @@
+{
+  "name": "Modul 450 TDD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Emresen54 <neziremresen1907@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },  
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
